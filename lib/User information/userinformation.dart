@@ -102,7 +102,7 @@ class _UserInformationState extends State<UserInformation> {
                 width: 800.0,
                 child: Card(
                   child: FutureBuilder<QuerySnapshot>(
-                    future: users.get(),
+                    future: users.orderBy("date", descending: false).get(),
                     builder: (context, snapshot) {
                       if (snapshot.hasData) {
                         return Center(

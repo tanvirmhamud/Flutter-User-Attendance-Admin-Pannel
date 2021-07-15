@@ -65,7 +65,10 @@ class _HomepageState extends State<Homepage> {
                         ));
                   });
                 },
-                icon: Icon(Icons.logout))
+                icon: Icon(
+                  Icons.logout,
+                  color: Colors.black,
+                ))
           ],
           elevation: 1.0,
           centerTitle: true,
@@ -99,7 +102,7 @@ class _HomepageState extends State<Homepage> {
                 padding: EdgeInsets.all(20.0),
                 child: Text(
                   "Today Attendence",
-                  style: TextStyle(fontSize: 18.0,fontFamily: 'Balsamiq Sans'),
+                  style: TextStyle(fontSize: 18.0, fontFamily: 'Balsamiq Sans'),
                 ),
               ),
             ),
